@@ -1,6 +1,6 @@
 # yt-dlp-workspace
 
-Este proyecto es una herramienta para descargar contenido de video y audio utilizando `yt-dlp`. Permite al usuario elegir entre descargar solo el video, solo el audio, ambos en archivos separados o combinados en un solo archivo.
+Esta herramienta permite descargar videos o audios de YouTube usando [`yt-dlp`](https://github.com/yt-dlp/yt-dlp). Puedes elegir entre descargar solo video, solo audio, ambos por separado o combinados en un solo archivo. El programa está en español y es una versión simplificada basada en la documentación oficial de yt-dlp.
 
 ## Estructura del Proyecto
 

@@ -17,7 +17,7 @@ yt-dlp-workspace
 ```
 ## Requisitos
 
-Se recomienda utilizar un entorno virtual (venv) para aislar las dependencias del proyecto. Para ejecutar este proyecto, necesitas tener instalados `yt-dlp` y `ffmpeg`. 
+Se recomienda utilizar un entorno virtual (venv) para aislar las dependencias del proyecto. Para ejecutar este proyecto, necesitas tener instalados `yt-dlp` y `ffmpeg`.
 
 1. Crea y activa un entorno virtual:
 

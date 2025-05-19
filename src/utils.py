@@ -6,7 +6,7 @@ def validate_url(url):
 def get_download_options(option):
     options = {
         'video': {
-            'format': 'bestvideo',
+            'format': 'bestvideo[ext=mp4]/bestvideo+bestaudio/best',
             'postprocessors': [{
                 'key': 'FFmpegVideoConvertor',
                 'preferedformat': 'mp4',
@@ -14,7 +14,7 @@ def get_download_options(option):
             'concurrent_fragment_downloads': 5,
         },
         'audio': {
-            'format': 'bestaudio',
+            'format': 'bestaudio[ext=m4a]/bestaudio/best',
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
                 'preferredformat': 'mp3',
@@ -22,7 +22,7 @@ def get_download_options(option):
             'concurrent_fragment_downloads': 5,
         },
         'both': {
-            'format': 'bestvideo+bestaudio/best',
+            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
             'postprocessors': [{
                 'key': 'FFmpegVideoConvertor',
                 'preferedformat': 'mp4',
@@ -30,7 +30,7 @@ def get_download_options(option):
             'concurrent_fragment_downloads': 5,
         },
         'combined': {
-            'format': 'bestvideo+bestaudio/best',
+            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
             'merge_output_format': 'mp4',
             'concurrent_fragment_downloads': 5,
         },

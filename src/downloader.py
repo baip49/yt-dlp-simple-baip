@@ -6,7 +6,7 @@ class Downloader:
         import yt_dlp
 
         ydl_opts = {
-            'format': 'bestvideo',
+            'format': 'bestvideo[ext=mp4]/bestvideo+bestaudio/best',
             'outtmpl': f'{output_path}/%(title)s.%(ext)s',
         }
 
@@ -28,7 +28,7 @@ class Downloader:
         import yt_dlp
 
         ydl_opts = {
-            'format': 'bestvideo+bestaudio/best',
+            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
             'outtmpl': f'{output_path}/%(title)s.%(ext)s',
             'postprocessors': [{
                 'key': 'FFmpegVideoConvertor',
@@ -43,7 +43,7 @@ class Downloader:
         import yt_dlp
 
         ydl_opts = {
-            'format': 'bestvideo+bestaudio/best',
+            'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
             'outtmpl': f'{output_path}/%(title)s.%(ext)s',
             'merge_output_format': 'mp4',
         }
